@@ -44,9 +44,7 @@
       letter-spacing:0.2px;
     }
 
-    nav a:hover{
-      color: var(--lavDeep);
-    }
+    nav a:hover{ color: var(--lavDeep); }
 
     .hero{
       display:flex;
@@ -61,6 +59,7 @@
       object-fit:cover;
       border-radius:26px;
       box-shadow: var(--shadow);
+      background: rgba(163,177,138,0.14);
     }
 
     h1{
@@ -97,6 +96,7 @@
       text-decoration:none;
       font-weight:700;
       transition: all 0.2s ease;
+      display:inline-block;
     }
 
     .btn:hover{
@@ -124,9 +124,7 @@
       color: var(--sageDeep);
     }
 
-    .card a:hover{
-      color: var(--lavDeep);
-    }
+    .card a:hover{ color: var(--lavDeep); }
 
     .card p{
       margin-top:12px;
@@ -148,15 +146,11 @@
         flex-direction:column;
         align-items:flex-start;
       }
-
       .profile-photo{
         width:220px;
         height:260px;
       }
-
-      h1{
-        font-size:2.3rem;
-      }
+      h1{ font-size:2.3rem; }
     }
   </style>
 </head>
@@ -171,48 +165,32 @@
   </nav>
 
   <section class="hero">
-
-    <img src="/rebecca_murray.jpeg" 
-         alt="Rebecca Murray" 
-         class="profile-photo">
+    <img src="/rebecca_murray.jpeg" alt="Rebecca Murray" class="profile-photo">
 
     <div>
       <h1>Rebecca Murray</h1>
-
-      <p class="subtitle">
-        Enterprise AI Deployment & Operating Systems
-      </p>
-
+      <p class="subtitle">Enterprise AI Deployment & Operating Systems</p>
       <p class="kicker">
-        Senior Strategic Individual Contributor and Program Leader specializing in enterprise AI and data platform adoption. 
-        I design and deploy enterprise operating systems that embed AI directly into production workflows—aligning adoption, governance, and measurable revenue impact.
+        Senior Strategic Individual Contributor and Program Leader specializing in enterprise AI and data platform adoption.
+        I design and deploy enterprise operating systems that embed AI directly into production workflows—aligning adoption,
+        governance, and measurable revenue impact.
       </p>
 
       <div class="ctaRow">
-        <a class="btn"
-           href="https://github.com/rebeccamurray2388-cmd/ai-deployment-workflows"
-           target="_blank"
-           rel="noopener">
+        <a class="btn" href="https://github.com/rebeccamurray2388-cmd/ai-deployment-workflows" target="_blank" rel="noopener">
           AI Deployment Workflows
         </a>
-
-        <a class="btn"
-           href="./about.html">
-          Executive Bio
-        </a>
+        <a class="btn" href="./about.html">Executive Bio</a>
       </div>
     </div>
-
   </section>
 
   <section id="projects">
     <h2 class="sectionTitle">Selected Work</h2>
-
     <div class="card">
       <a href="https://github.com/rebeccamurray2388-cmd/ai-deployment-workflows" target="_blank" rel="noopener">
         AI Deployment & Adoption Workflows →
       </a>
-
       <p>
         Deployment-level case studies and operating models covering enterprise activation,
         AI-embedded partner ecosystems, and governance frameworks designed for scalable adoption.
@@ -220,9 +198,7 @@
     </div>
   </section>
 
-  <footer>
-    © Rebecca Murray
-  </footer>
+  <footer>© Rebecca Murray</footer>
 
 </body>
 </html>
