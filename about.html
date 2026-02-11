@@ -1,177 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Rebecca Murray</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Bio | Rebecca Murray</title>
 
   <style>
     :root{
       --cream:#F6F1E9;
       --sage:#A3B18A;
       --sageDeep:#6B8E6E;
-      --lav:#CDB4DB;
       --lavDeep:#B8A0D6;
       --text:#2F2F2F;
-      --card:#FFFFFF;
-      --shadow:0 14px 40px rgba(0,0,0,0.06);
-      --line:rgba(163,177,138,0.55);
+      --shadow:0 22px 60px rgba(0,0,0,0.08);
+      --line:rgba(163,177,138,0.45);
     }
 
     body{
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-      max-width: 1020px;
-      margin: 56px auto;
-      padding: 0 22px;
-      line-height: 1.8;
+      max-width: 980px;
+      margin: 70px auto;
+      padding: 0 26px;
+      line-height: 1.85;
       background: var(--cream);
       color: var(--text);
     }
 
     nav{
-      display:flex;
-      gap: 26px;
-      align-items:center;
-      padding-bottom: 14px;
+      margin-bottom:60px;
       border-bottom: 2px solid var(--line);
-      margin-bottom: 38px;
+      padding-bottom:14px;
     }
 
     nav a{
       text-decoration:none;
       color: var(--sageDeep);
-      font-weight:650;
-      letter-spacing:0.2px;
+      font-weight:600;
     }
 
-    nav a:hover{ color: var(--lavDeep); }
+    nav a:hover{
+      color: var(--lavDeep);
+    }
 
-    .hero{
+    .header{
       display:flex;
-      gap: 34px;
+      gap:60px;
       align-items:flex-start;
-      margin-bottom: 22px;
+      margin-bottom:60px;
     }
 
-    .photo{
-      width: 230px;
-      height: 280px;
-      object-fit: cover;
-      border-radius: 22px;
+    .profile-photo{
+      width:280px;
+      height:360px;
+      object-fit:cover;
+      border-radius:36px;
       box-shadow: var(--shadow);
-      background: rgba(163,177,138,0.14);
-      flex: 0 0 auto;
     }
 
     h1{
-      font-size: 2.55rem;
-      line-height: 1.1;
-      margin: 0 0 10px 0;
+      margin:0 0 10px 0;
+      font-size:2.8rem;
       letter-spacing:-0.5px;
     }
 
     .subtitle{
-      margin: 0;
       color: var(--sageDeep);
-      font-weight: 650;
-      font-size: 1.06rem;
+      font-weight:600;
+      margin-bottom:18px;
+      font-size:1.1rem;
     }
 
-    .links{
-      margin-top: 16px;
+    p{
+      margin-bottom:24px;
+      font-size:1.08rem;
+      max-width:760px;
+    }
+
+    .metrics{
+      margin:60px 0;
+      padding:28px 0;
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
       display:flex;
-      gap: 12px;
+      gap:60px;
       flex-wrap:wrap;
-      align-items:center;
     }
 
-    .btn{
-      display:inline-block;
-      padding: 10px 14px;
-      border-radius: 12px;
-      background: rgba(163,177,138,0.18);
+    .metric{
+      font-size:1.05rem;
       color: var(--sageDeep);
-      text-decoration:none;
-      font-weight: 750;
+      font-weight:600;
     }
-
-    .btn:hover{
-      background: rgba(205,180,219,0.22);
-      color: var(--lavDeep);
-    }
-
-    .card{
-      margin-top: 18px;
-      background: var(--card);
-      border-radius: 18px;
-      box-shadow: var(--shadow);
-      padding: 22px 24px;
-    }
-
-    .card p{
-      margin: 0 0 16px 0;
-      color: rgba(47,47,47,0.90);
-      font-size: 1.03rem;
-    }
-
-    .card p:last-child{ margin-bottom: 0; }
 
     footer{
-      margin-top: 78px;
-      padding-top: 16px;
-      border-top: 1px solid rgba(163,177,138,0.35);
-      color: rgba(107,142,110,0.95);
+      margin-top:90px;
+      padding-top:20px;
+      border-top:1px solid var(--line);
       text-align:center;
-      font-size: 0.92rem;
+      font-size:0.9rem;
+      color: var(--sageDeep);
     }
 
-    @media (max-width:820px){
-      .hero{ flex-direction:column; }
-      .photo{ width: 210px; height: 260px; }
-      h1{ font-size: 2.2rem; }
+    @media (max-width:900px){
+      .header{
+        flex-direction:column;
+      }
+
+      .profile-photo{
+        width:230px;
+        height:300px;
+      }
+
+      .metrics{
+        gap:30px;
+      }
+
+      h1{
+        font-size:2.3rem;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <nav>
-    <a href="./index.html#projects">Projects</a>
-    <a href="./about.html">About</a>
-    <a href="https://github.com/rebeccamurray2388-cmd" target="_blank" rel="noopener">GitHub</a>
-    <a href="https://www.linkedin.com/in/rebecca-murray-a2634114a/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="./index.html">← Back to Home</a>
   </nav>
 
-  <div class="hero">
-    <img class="photo" src="./rebecca_portrait.jpeg" alt="Rebecca Murray">
+  <div class="header">
+    <img src="/rebecca_about.jpeg" alt="Rebecca Murray" class="profile-photo">
+
     <div>
       <h1>Rebecca Murray</h1>
-      <p class="subtitle">Senior Strategic IC & Program Leader — Enterprise AI and Data Platform Adoption</p>
-
-      <div class="links">
-        <a class="btn" href="https://github.com/rebeccamurray2388-cmd/ai-deployment-workflows" target="_blank" rel="noopener">AI Deployment Workflows</a>
-        <a class="btn" href="https://www.linkedin.com/in/rebecca-murray-a2634114a/" target="_blank" rel="noopener">LinkedIn</a>
+      <div class="subtitle">
+        Enterprise AI Deployment Leader
       </div>
     </div>
   </div>
 
-  <div class="card">
-    <p>
-      Rebecca Murray serves as a Senior Strategic Individual Contributor and Program Leader with expertise in enterprise AI and data platform adoption. Based in Dallas, Oregon, she is recognized for establishing and scaling internal programs that translate complex and rapidly evolving technology into repeatable systems that teams readily adopt. Her focus lies in integrating AI into operational workflows to enhance time-to-value, improve execution quality, and ensure long-term adoption for enterprises undertaking modernization at scale.
-    </p>
+  <p>
+    I design enterprise operating systems that embed AI into production environments. My work focuses on converting rapidly evolving capabilities into structured execution frameworks—aligning adoption, governance, and measurable commercial outcomes across complex organizations undergoing modernization.
+  </p>
 
-    <p>
-      During her nearly four-year tenure at dbt Labs, Rebecca advanced through increasingly senior roles, ultimately serving as a principal overseeing enterprise onboarding, activation, and partner enablement initiatives. She pioneered and expanded the company’s Managed Onboarding program, personally leading over 200 enterprise implementations and supporting more than 600 activations. Her efforts significantly reduced onboarding timelines from approximately six months to under seventy days, contributed to adoption efforts linked to over $200 million in enterprise revenue, and facilitated the scaling of services programs beyond $5 million.
-    </p>
+  <p>
+    At dbt Labs, I progressed through senior leadership roles overseeing enterprise onboarding, activation, and global partner enablement. I led more than 200 enterprise implementations and supported over 600 activations, reducing onboarding timelines from approximately six months to under seventy days while contributing to adoption across $200M+ in enterprise revenue. I also architected and scaled the Authorized Onboarding Partner Program and Advocate Accreditation initiative, expanding global delivery capacity without compromising execution quality.
+  </p>
 
-    <p>
-      Furthermore, she devised and implemented dbt Labs’ Authorized Onboarding Partner Program and Advocate Accreditation initiative, issuing hundreds of partner accreditations and augmenting global delivery capacity while maintaining quality and consistency.
-    </p>
+  <p>
+    My approach blends systems design with disciplined change management. I treat programs as operating infrastructure—not presentations—using applied AI to reduce coordination overhead, convert qualitative signal into structured execution, and build models that scale independently of individual ownership. The objective is durable transformation, not temporary enablement.
+  </p>
 
-    <p>
-      Rebecca adopts a people-centered approach to AI and platform adoption, treating programs as products and employing applied AI to minimize friction, automate repetitive tasks, and empower teams to operate independently at scale. She earned her master’s degree while working full-time and raising her daughter as a single parent, an experience that underscores her emphasis on clarity, sustainability, and designing systems that respect human limitations. Recognized as an Influential Woman 2026, she concentrates on high-impact work at the nexus of applied AI, enterprise enablement, and resilient system design.
-    </p>
+  <div class="metrics">
+    <div class="metric">200+ Enterprise Implementations</div>
+    <div class="metric">600+ Activations Supported</div>
+    <div class="metric">$200M+ Enterprise Revenue Impact</div>
+    <div class="metric">Onboarding Reduced from 6 Months → &lt;70 Days</div>
   </div>
 
-  <footer>© Rebecca Murray</footer>
+  <p>
+    I earned my master’s degree while working full-time and leading enterprise programs, an experience that reinforced my commitment to clarity, sustainability, and building systems that respect human constraints. I focus on high-impact work at the intersection of applied AI, enterprise transformation, and resilient operating design.
+  </p>
+
+  <footer>
+    © Rebecca Murray
+  </footer>
+
 </body>
 </html>
