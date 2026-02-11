@@ -14,15 +14,15 @@
       --lavDeep:#B8A0D6;
       --text:#2F2F2F;
       --card:#FFFFFF;
-      --shadow:0 14px 40px rgba(0,0,0,0.06);
+      --shadow:0 16px 40px rgba(0,0,0,0.06);
       --line:rgba(163,177,138,0.55);
     }
 
     body{
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-      max-width: 1020px;
-      margin: 56px auto;
-      padding: 0 22px;
+      max-width: 1050px;
+      margin: 60px auto;
+      padding: 0 24px;
       line-height: 1.75;
       background: var(--cream);
       color: var(--text);
@@ -30,11 +30,11 @@
 
     nav{
       display:flex;
-      gap: 26px;
+      gap: 28px;
       align-items:center;
       padding-bottom: 14px;
       border-bottom: 2px solid var(--line);
-      margin-bottom: 38px;
+      margin-bottom: 50px;
     }
 
     nav a{
@@ -44,149 +44,185 @@
       letter-spacing:0.2px;
     }
 
-    nav a:hover{ color: var(--lavDeep); }
+    nav a:hover{
+      color: var(--lavDeep);
+    }
 
-    .top{
+    .hero{
       display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      gap: 24px;
-      margin-bottom: 22px;
+      gap:60px;
+      align-items:center;
+      margin-bottom:40px;
+    }
+
+    .profile-photo{
+      width:260px;
+      height:300px;
+      object-fit:cover;
+      border-radius:26px;
+      box-shadow: var(--shadow);
     }
 
     h1{
-      font-size: 3.0rem;
-      line-height: 1.06;
-      margin: 0 0 10px 0;
-      letter-spacing:-0.7px;
+      font-size:3rem;
+      margin:0 0 10px 0;
+      letter-spacing:-0.6px;
     }
 
     .subtitle{
-      margin: 0;
+      margin:0 0 16px 0;
+      font-size:1.15rem;
       color: var(--sageDeep);
-      font-weight: 650;
-      font-size: 1.12rem;
+      font-weight:600;
     }
 
     .kicker{
-      margin: 18px 0 0 0;
-      max-width: 820px;
-      color: rgba(47,47,47,0.88);
-      font-size: 1.06rem;
+      font-size:1.05rem;
+      color: rgba(47,47,47,0.9);
+      max-width: 720px;
+    }
+
+    .ctaRow{
+      margin-top:20px;
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:12px 20px;
+      border-radius:14px;
+      background: rgba(163,177,138,0.18);
+      color: var(--sageDeep);
+      text-decoration:none;
+      font-weight:700;
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover{
+      background: rgba(205,180,219,0.25);
+      color: var(--lavDeep);
     }
 
     .sectionTitle{
-      margin: 46px 0 14px;
-      font-size: 2.0rem;
+      margin:60px 0 18px;
+      font-size:2rem;
       color: var(--sageDeep);
-      letter-spacing:-0.2px;
     }
 
     .card{
       background: var(--card);
-      border-radius: 18px;
+      border-radius:20px;
+      padding:26px;
       box-shadow: var(--shadow);
-      padding: 22px 24px;
     }
 
-    .projectTitle{
-      display:flex;
-      flex-wrap:wrap;
-      align-items:baseline;
-      gap: 10px;
-      margin: 0 0 10px 0;
-    }
-
-    .projectTitle a{
-      font-weight: 800;
-      color: var(--sageDeep);
+    .card a{
+      font-size:1.2rem;
+      font-weight:800;
       text-decoration:none;
-      font-size: 1.2rem;
-    }
-
-    .projectTitle a:hover{ color: var(--lavDeep); }
-
-    .projectDesc{
-      margin: 0;
-      color: rgba(47,47,47,0.88);
-      font-size: 1.04rem;
-    }
-
-    .metaRow{
-      margin-top: 14px;
-      display:flex;
-      gap: 12px;
-      flex-wrap:wrap;
-      align-items:center;
-    }
-
-    .btn{
-      display:inline-block;
-      padding: 10px 14px;
-      border-radius: 12px;
-      background: rgba(163,177,138,0.18);
       color: var(--sageDeep);
-      text-decoration:none;
-      font-weight: 750;
     }
 
-    .btn:hover{
-      background: rgba(205,180,219,0.22);
+    .card a:hover{
       color: var(--lavDeep);
     }
 
-    footer{
-      margin-top: 78px;
-      padding-top: 16px;
-      border-top: 1px solid rgba(163,177,138,0.35);
-      color: rgba(107,142,110,0.95);
-      text-align:center;
-      font-size: 0.92rem;
+    .card p{
+      margin-top:12px;
+      font-size:1.05rem;
+      color: rgba(47,47,47,0.9);
     }
 
-    @media (max-width:720px){
-      h1{ font-size: 2.35rem; }
+    footer{
+      margin-top:90px;
+      padding-top:18px;
+      border-top:1px solid rgba(163,177,138,0.4);
+      text-align:center;
+      font-size:0.9rem;
+      color: var(--sageDeep);
+    }
+
+    @media (max-width: 800px){
+      .hero{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      .profile-photo{
+        width:220px;
+        height:260px;
+      }
+
+      h1{
+        font-size:2.3rem;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <nav>
     <a href="./about.html">About</a>
     <a href="#projects">Projects</a>
-    <a href="https://github.com/rebeccamurray2388-cmd" target="_blank"_
-      <section class="hero">
+    <a href="https://github.com/rebeccamurray2388-cmd" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/rebecca-murray-a2634114a/" target="_blank" rel="noopener">LinkedIn</a>
+  </nav>
 
-  <img src="./rebecca_murray.jpeg" alt="Rebecca Murray" class="profile-photo">
+  <section class="hero">
 
-  <div class="hero-right">
-    <h1>Rebecca Murray</h1>
+    <img src="/rebecca_murray.jpeg" 
+         alt="Rebecca Murray" 
+         class="profile-photo">
 
-    <p class="subtitle">
-      Enterprise AI Deployment & Operating Systems
-    </p>
+    <div>
+      <h1>Rebecca Murray</h1>
 
-    <p class="kicker">
-      Senior Strategic IC & Program Leader specializing in enterprise AI and data platform adoption. 
-      I design and deploy operating systems that embed AI directly into production workflows—aligning
-      adoption, governance, and measurable revenue impact.
-    </p>
+      <p class="subtitle">
+        Enterprise AI Deployment & Operating Systems
+      </p>
 
-    <div class="ctaRow">
-      <a class="btn" 
-         href="https://github.com/rebeccamurray2388-cmd/ai-deployment-workflows" 
-         target="_blank" 
-         rel="noopener">
-        AI Deployment Workflows
-      </a>
+      <p class="kicker">
+        Senior Strategic Individual Contributor and Program Leader specializing in enterprise AI and data platform adoption. 
+        I design and deploy enterprise operating systems that embed AI directly into production workflows—aligning adoption, governance, and measurable revenue impact.
+      </p>
 
-      <a class="btn" 
-         href="./about.html">
-        Executive Bio
-      </a>
+      <div class="ctaRow">
+        <a class="btn"
+           href="https://github.com/rebeccamurray2388-cmd/ai-deployment-workflows"
+           target="_blank"
+           rel="noopener">
+          AI Deployment Workflows
+        </a>
+
+        <a class="btn"
+           href="./about.html">
+          Executive Bio
+        </a>
+      </div>
     </div>
-  </div>
 
-</section>
-<img src="/rebecca_murray.jpeg" alt="Rebecca Murray" style="width:240px;height:280px;object-fit:cover;border-radius:22px;box-shadow:0 14px 40px rgba(0,0,0,0.06);display:block;margin:26px 0 10px;">
+  </section>
 
+  <section id="projects">
+    <h2 class="sectionTitle">Selected Work</h2>
+
+    <div class="card">
+      <a href="https://github.com/rebeccamurray2388-cmd/ai-deployment-workflows" target="_blank" rel="noopener">
+        AI Deployment & Adoption Workflows →
+      </a>
+
+      <p>
+        Deployment-level case studies and operating models covering enterprise activation,
+        AI-embedded partner ecosystems, and governance frameworks designed for scalable adoption.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © Rebecca Murray
+  </footer>
+
+</body>
+</html>
