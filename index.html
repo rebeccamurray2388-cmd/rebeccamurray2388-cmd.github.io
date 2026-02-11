@@ -11,52 +11,100 @@
       max-width: 900px;
       margin: 60px auto;
       padding: 0 20px;
-      line-height: 1.6;
-      color: #111;
+      line-height: 1.7;
+      background-color: #F6F1E9; /* cream */
+      color: #2F2F2F; /* soft charcoal */
     }
 
     nav {
-      margin-bottom: 40px;
+      margin-bottom: 60px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #A3B18A; /* sage underline */
     }
 
     nav a {
-      margin-right: 20px;
+      margin-right: 28px;
       text-decoration: none;
-      color: #2563eb;
+      color: #6B8E6E; /* deep sage */
       font-weight: 500;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #CDB4DB; /* lavender hover */
     }
 
-    h1 {
-      font-size: 2.4em;
-      margin-bottom: 0.2em;
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      margin-bottom: 60px;
+    }
+
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+    }
+
+    .hero-text h1 {
+      font-size: 2.6em;
+      margin: 0;
+    }
+
+    .tagline {
+      margin-top: 12px;
+      color: #6B8E6E;
+      font-weight: 500;
+      font-size: 1.1em;
     }
 
     h2 {
-      margin-top: 2.5em;
-      font-size: 1.5em;
-    }
-
-    ul {
-      padding-left: 20px;
+      margin-top: 3em;
+      font-size: 1.6em;
+      color: #6B8E6E;
     }
 
     a {
-      color: #2563eb;
+      color: #6B8E6E;
       text-decoration: none;
+      font-weight: 500;
     }
 
     a:hover {
-      text-decoration: underline;
+      color: #B8A0D6;
+    }
+
+    .project-card {
+      margin-top: 20px;
+      padding: 25px;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    .project-card p {
+      margin-top: 10px;
     }
 
     footer {
-      margin-top: 80px;
+      margin-top: 100px;
       font-size: 0.9em;
-      color: #555;
+      color: #6B8E6E;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .profile-photo {
+        width: 160px;
+        height: 160px;
+      }
     }
   </style>
 </head>
@@ -70,31 +118,39 @@
     <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
   </nav>
 
-  <h1>Rebecca Murray</h1>
+  <div class="hero">
+    <img src="rebecca_portrait.jpg" alt="Rebecca Murray" class="profile-photo">
+    <div class="hero-text">
+      <h1>Rebecca Murray</h1>
+      <p class="tagline">Enterprise AI Deployment & Operating Systems</p>
+    </div>
+  </div>
 
   <section id="about">
     <p>
-      Senior strategic individual contributor focused on enterprise activation,
-      partner enablement, and AI-assisted adoption systems.
+      Senior strategic individual contributor focused on enterprise activation, partner enablement, 
+      and AI-integrated operating systems.
     </p>
 
     <p>
-      I build systems that help people actually use powerful tools at scale.
-      My work sits at the intersection of product, partners, and customers —
-      translating real workflows into durable enablement and activation programs.
+      I design and deploy enterprise-grade workflows that embed AI directly into production systems — 
+      aligning adoption, governance, and revenue impact.
     </p>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <a href="https://github.com/rebeccamurray2388-cmd/ai-deployment-workflows" target="_blank" rel="noopener">
-          AI Deployment & Adoption Workflows
-        </a>
-        — practical, real-world systems for AI rollout, enablement, and sustained usage.
-      </li>
-    </ul>
+    <h2>Selected Work</h2>
+
+    <div class="project-card">
+      <a href="https://github.com/rebeccamurray2388-cmd/ai-deployment-workflows" target="_blank">
+        AI Deployment & Adoption Workflows →
+      </a>
+      <p>
+        Production-grade operating systems that integrate AI into live enterprise workflows 
+        to drive measurable adoption, revenue acceleration, and scalable operational leverage.
+      </p>
+    </div>
+
   </section>
 
   <footer>
