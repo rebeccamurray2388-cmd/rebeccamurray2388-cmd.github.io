@@ -14,7 +14,7 @@
       --lavDeep:#B8A0D6;
       --text:#2F2F2F;
       --card:#FFFFFF;
-      --shadow:0 16px 40px rgba(0,0,0,0.06);
+      --shadow:0 18px 50px rgba(0,0,0,0.07);
       --line:rgba(163,177,138,0.55);
     }
 
@@ -34,7 +34,7 @@
       align-items:center;
       padding-bottom: 14px;
       border-bottom: 2px solid var(--line);
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
 
     nav a{
@@ -44,32 +44,33 @@
       letter-spacing:0.2px;
     }
 
-    nav a:hover{ color: var(--lavDeep); }
+    nav a:hover{
+      color: var(--lavDeep);
+    }
 
     .hero{
       display:flex;
-      gap:60px;
+      gap:70px;
       align-items:center;
-      margin-bottom:40px;
+      margin-bottom:60px;
     }
 
     .profile-photo{
       width:260px;
       height:300px;
       object-fit:cover;
-      border-radius:26px;
+      border-radius:32px;
       box-shadow: var(--shadow);
-      background: rgba(163,177,138,0.14);
     }
 
     h1{
       font-size:3rem;
-      margin:0 0 10px 0;
+      margin:0 0 12px 0;
       letter-spacing:-0.6px;
     }
 
     .subtitle{
-      margin:0 0 16px 0;
+      margin:0 0 18px 0;
       font-size:1.15rem;
       color: var(--sageDeep);
       font-weight:600;
@@ -77,12 +78,12 @@
 
     .kicker{
       font-size:1.05rem;
-      color: rgba(47,47,47,0.9);
+      color: rgba(47,47,47,0.92);
       max-width: 720px;
     }
 
     .ctaRow{
-      margin-top:20px;
+      margin-top:24px;
       display:flex;
       gap:14px;
       flex-wrap:wrap;
@@ -90,30 +91,41 @@
 
     .btn{
       padding:12px 20px;
-      border-radius:14px;
-      background: rgba(163,177,138,0.18);
-      color: var(--sageDeep);
+      border-radius:16px;
+      background: var(--sageDeep);
+      color: #fff;
       text-decoration:none;
       font-weight:700;
       transition: all 0.2s ease;
       display:inline-block;
     }
 
+    .btn.secondary{
+      background: rgba(163,177,138,0.25);
+      color: var(--sageDeep);
+    }
+
     .btn:hover{
-      background: rgba(205,180,219,0.25);
-      color: var(--lavDeep);
+      transform: translateY(-2px);
     }
 
     .sectionTitle{
-      margin:60px 0 18px;
+      margin:70px 0 12px;
       font-size:2rem;
       color: var(--sageDeep);
     }
 
+    .sectionIntro{
+      margin:0 0 24px 0;
+      font-size:1rem;
+      color: rgba(47,47,47,0.8);
+      max-width:700px;
+    }
+
     .card{
       background: var(--card);
-      border-radius:20px;
-      padding:26px;
+      border-radius:22px;
+      padding:28px;
       box-shadow: var(--shadow);
     }
 
@@ -124,17 +136,19 @@
       color: var(--sageDeep);
     }
 
-    .card a:hover{ color: var(--lavDeep); }
+    .card a:hover{
+      color: var(--lavDeep);
+    }
 
     .card p{
-      margin-top:12px;
+      margin-top:14px;
       font-size:1.05rem;
       color: rgba(47,47,47,0.9);
     }
 
     footer{
       margin-top:90px;
-      padding-top:18px;
+      padding-top:20px;
       border-top:1px solid rgba(163,177,138,0.4);
       text-align:center;
       font-size:0.9rem;
@@ -146,11 +160,15 @@
         flex-direction:column;
         align-items:flex-start;
       }
+
       .profile-photo{
         width:220px;
         height:260px;
       }
-      h1{ font-size:2.3rem; }
+
+      h1{
+        font-size:2.3rem;
+      }
     }
   </style>
 </head>
@@ -165,40 +183,64 @@
   </nav>
 
   <section class="hero">
+
     <img src="/rebecca_murray.jpeg" alt="Rebecca Murray" class="profile-photo">
 
     <div>
       <h1>Rebecca Murray</h1>
-      <p class="subtitle">Enterprise AI Deployment & Operating Systems</p>
+
+      <p class="subtitle">
+        Enterprise AI Operating Systems & Adoption Architecture
+      </p>
+
       <p class="kicker">
-        Senior Strategic Individual Contributor and Program Leader specializing in enterprise AI and data platform adoption.
-        I design and deploy enterprise operating systems that embed AI directly into production workflows—aligning adoption,
-        governance, and measurable revenue impact.
+        Enterprise AI Deployment Leader specializing in operating system design for AI-enabled organizations.
+        I build production-grade systems that integrate AI into core workflows—aligning adoption, governance,
+        and measurable revenue outcomes across complex enterprise environments.
       </p>
 
       <div class="ctaRow">
-        <a class="btn" href="https://github.com/rebeccamurray2388-cmd/ai-deployment-workflows" target="_blank" rel="noopener">
+        <a class="btn"
+           href="https://github.com/rebeccamurray2388-cmd/ai-deployment-workflows"
+           target="_blank"
+           rel="noopener">
           AI Deployment Workflows
         </a>
-        <a class="btn" href="./about.html">Executive Bio</a>
+
+        <a class="btn secondary"
+           href="./about.html">
+          Executive Bio
+        </a>
       </div>
     </div>
+
   </section>
 
   <section id="projects">
+
     <h2 class="sectionTitle">Selected Work</h2>
+
+    <p class="sectionIntro">
+      Production implementations across enterprise activation, partner ecosystems, and AI governance modernization.
+    </p>
+
     <div class="card">
       <a href="https://github.com/rebeccamurray2388-cmd/ai-deployment-workflows" target="_blank" rel="noopener">
         AI Deployment & Adoption Workflows →
       </a>
+
       <p>
-        Deployment-level case studies and operating models covering enterprise activation,
-        AI-embedded partner ecosystems, and governance frameworks designed for scalable adoption.
+        Deployment-level case studies and operating frameworks covering enterprise customer activation,
+        AI-embedded partner ecosystems, and governance modernization. These systems were implemented
+        in live operating environments and designed to scale without incremental headcount.
       </p>
     </div>
+
   </section>
 
-  <footer>© Rebecca Murray</footer>
+  <footer>
+    © Rebecca Murray
+  </footer>
 
 </body>
 </html>
